@@ -64,7 +64,8 @@ const ImgContainer = styled.div`
 // Contenedor del texto
 const TextContainer = styled(ImgContainer)`
     width: 70vw;
-    height: 30vh;
+    height: 40vh;
+    overflow: auto;
 
     @media screen and (min-width: 900px) {
         order: 2;
@@ -96,7 +97,7 @@ const Home = ()=>{
         <HomePage tema={tema}>
             <TextContainer>
                 <Texto tema={tema}>
-                    Hey, hola, soy Diego, un desarrollador front-end Colombiano que le apasiona mucho el mundo de tecnologia
+                    ¡Hola mundo y bienvenidos!, soy Diego, un desarrollador front-end Colombiano que le apasiona mucho el mundo de tecnologia. Y recuerda siempre: "¡Si pudes imaginarlo, pudes programarlo!".
                 </Texto>
             </TextContainer>
             <ImgContainer>

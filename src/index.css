@@ -1,7 +1,9 @@
-*{
+#root{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
     overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
 }
 @media screen and (min-width: 900px) {
     *{

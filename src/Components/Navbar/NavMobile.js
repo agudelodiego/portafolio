@@ -99,20 +99,25 @@ const MenuBtn = styled.button`
 const mostrar = keyframes`
     0%{
         transform: translateX(300px);
+        visibility: hidden;
     }
     50%{
         transform: translateX(-10px);
+        visibility: visible;
     }
     100%{
         transform: translateX(0px);
+        visibility: visible;
     }
 `;
 const ocultar = keyframes`
     from{
         transform: translateX(0px);
+        visibility: visible;
     }
     to{
         transform: translateX(200px);
+        visibility: hidden;
     }
 `;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar.js";
+import Navbar from "./Components/Navbar/NavBar.js";
 
 // Importamos el contexto para el tema oscuro
 import {ThemeContext} from "./Components/TemaColor/ThemeContext.js";
@@ -8,7 +8,7 @@ import {ThemeContext} from "./Components/TemaColor/ThemeContext.js";
 // Importamos la homePage
 import Home from "./Pages/Home/Home.js";
 
-
+ 
 
 const RouteApp = ()=>{
     return (

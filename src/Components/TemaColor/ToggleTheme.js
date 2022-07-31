@@ -15,8 +15,8 @@ const ThemeBtn = styled.button`
     border: none;
     background-color: inherit;
     position: absolute;
-    top: -20px;
-    left: -25px;
+    top: 0px;
+    left: 0px;
     cursor: pointer;
 
     @media screen and (min-width: 900px) {
