@@ -127,7 +127,7 @@ const aparecer = keyframes`
 
 const StartBtn = styled.button`
     margin-top: 50px;
-    width: 180px;
+    width: 150px;
     height: 100px;
     background-color: #605399;
     border: none;
@@ -135,12 +135,13 @@ const StartBtn = styled.button`
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-    transition: transform 0.6s, box-shadow 0.6s;
+    transition: transform 0.6s, box-shadow 0.6s, border-radius 0.6s;
     animation: ${aparecer} 2s ease 10s backwards;
 
     &:hover{
         transform: scale(1.1);
         box-shadow: 2px 2px 4px #666666;
+        border-radius: 50%;
     }
 
 `;

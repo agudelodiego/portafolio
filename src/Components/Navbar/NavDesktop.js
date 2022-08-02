@@ -20,6 +20,7 @@ const NavContainer = styled.nav`
     top: 0;
     background-color: red;
     background-color: ${props => props.tema.primario};
+    z-index: 200;
 `;
 // *--------------------------------------------------------------------------------
 
@@ -34,6 +35,7 @@ const DeskLink = styled(Link)`
     margin: 0 10px;
     font-weight: bold;
     color: ${props => props.tema.terciario};
+    /* z-index: 200; */
 
     &.active{
         border-top: none;

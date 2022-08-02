@@ -27,6 +27,7 @@ const Contenedor = styled.nav`
     background-color: ${props => props.primario};
     color: ${props => props.terciario};
     overflow-x: visible;
+    z-index: 100;
 `;
 // *----------------------------------------------------------------------------------
 
@@ -93,6 +94,7 @@ const MenuBtn = styled.button`
     align-items: center;
     border: none;
     background-color: inherit;
+    cursor: pointer;
 `;
 
 // Animaciones
@@ -137,6 +139,8 @@ const MenuContainer = styled.div`
     background-color: ${props => props.primario};
     border-bottom: 2px solid ${props => props.terciario};
     overflow-x: visible;
+    z-index: 100;
+    
 
     &.oculto{
         animation: ${ocultar} 0.5s ease forwards;

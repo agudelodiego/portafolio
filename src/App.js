@@ -18,8 +18,8 @@ const ContenedorApp = styled.div`
     padding: 0;
     perspective: 400vh;
     perspective-origin: bottom;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
+    /* overflow-y: scroll; */
 `;
 
 

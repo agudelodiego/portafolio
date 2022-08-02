@@ -6,7 +6,6 @@ import {Tema} from "../../Components/TemaColor/ThemeContext.js";
 
 
 
-
 // *--------------------------------------------------------------------------------
 // Componente encargado de renderizar el contenedro de la home page
 const HomePage = styled.main`
