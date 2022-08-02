@@ -22,6 +22,7 @@ const GalleriaIconsSTY = styled.div`
     grid-auto-rows: 160px;
     gap: 1rem;
     justify-content: center;
+    overflow-x: visible;
 `;
 
 
@@ -35,9 +36,11 @@ const Item = styled.div`
     flex-direction: column;
     position: relative;
 
-    &:hover .hijo{
-        opacity: 1;
-        transform: scale(1) translateX(150px) translateY(-90px);
+    @media screen and (min-width: 300px) {
+        &:hover .hijo{
+            opacity: 1;
+            transform: scale(0.7) translateX(0px) translateY(-120px) rotate(-40deg);
+        }   
     }
 `;
 
@@ -61,22 +64,29 @@ const ItemH2 = styled.h2`
 
 // Componentes encargado de la descripcion de cada item de la linsa
 const Descripcion = styled.div`
-    width: 300px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     position: absolute;
-    top: -50px;
-    left: -100px;
-    z-index: 100;
+    top: -70px;
+    left: -50px;
+    z-index: 90;
     background-color: ${props => props.tema.primario};
-    border-radius: 40px 40px 40px 0px;
+    border-radius: 50% 50% 50% 0px;
     display: flex;
     border-top: 2.7px solid ${props => props.tema.terciario};
     border-right: 2.7px solid ${props => props.tema.terciario};
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transform: scale(0.2) translateX(0px) translateY(0px);
-    transition: opacity 0.5s ease, transform 0.8s ease;
+    transform: scale(0.2) translateX(0px) translateY(0px) rotate(-40deg);
+    transition: opacity 0.5s ease-in, transform 0.8s ease-out;
+
+    @media screen and (min-width: 1000px) {
+        width: 260px;
+        height: 260px;
+        top: -120px;
+        left: -75px;
+    }
 `;
 const Texto = styled.p`
     color: ${props => props.tema.terciario};
@@ -85,6 +95,8 @@ const Texto = styled.p`
     margin: 0;
     padding: 0 10px;
     box-sizing: border-box;
+    text-align: center;
+    transform: rotate(40deg);
 `;
 
 
@@ -112,7 +124,7 @@ const GaleriaIcon = ()=>{
                 <ItemH2 tema={tema}>Css</ItemH2>
                 <Descripcion tema={tema} className="hijo">
                     <Texto tema={tema}>
-                        Css es el lenguaje que se utiliza para darle estilos a las estructuras creadas de maenera previa con html.
+                        Css es el lenguaje que se utiliza para darle estilos a las estructuras creadas de mediante html.
                     </Texto>
                 </Descripcion>
             </Item>
@@ -128,22 +140,47 @@ const GaleriaIcon = ()=>{
             <Item>
                 <Img src={ReactJs} alt="Imagen de React js"/>
                 <ItemH2 tema={tema}>React</ItemH2>
+                <Descripcion tema={tema} className="hijo">
+                    <Texto tema={tema}>
+                        React es una libreria de Javascript pensada para hacer programacion reactiva, es decir, reaccionar a las acciones del usuario.
+                    </Texto>
+                </Descripcion>
             </Item>
             <Item>
                 <Img src={github} alt="Imagen de github"/>
                 <ItemH2 tema={tema}>Github</ItemH2>
+                <Descripcion tema={tema} className="hijo">
+                    <Texto tema={tema}>
+                        Github es una red social donde diferentes programadores pueden compartir sus trabajos realizados, asi como colaborar en proyectos de otros programadores.
+                    </Texto>
+                </Descripcion>
             </Item>
             <Item>
                 <Img src={python} alt="Imagen de python"/>
                 <ItemH2 tema={tema}>Python</ItemH2>
+                <Descripcion tema={tema} className="hijo">
+                    <Texto tema={tema}>
+                        Python es un lenguaje de programacion bastante utilizado hoy en dia, suele ser muy utilizado en la programacion del lado del servidor y en inteligencia artificial.
+                    </Texto>
+                </Descripcion>
             </Item>
             <Item>
                 <Img className="StyComIcon" src={StyledCom} alt="Imagen de python"/>
                 <ItemH2 tema={tema}>Styled-components</ItemH2>
+                <Descripcion tema={tema} className="hijo">
+                    <Texto tema={tema}>
+                        Styled-components es una libreria que le permite a los programadores diseñar componentes de una manera mas sencilla y poderosa.
+                    </Texto>
+                </Descripcion>
             </Item>
             <Item>
                 <Img src={arduino} alt="Imagen de python"/>
                 <ItemH2 tema={tema}>Arduino</ItemH2>
+                <Descripcion tema={tema} className="hijo">
+                    <Texto tema={tema}>
+                        Arduino es una plataforma de desarrollo, con la cual se pueden llevar a la realidad diversas ideas relacionadas con el hardware.
+                    </Texto>
+                </Descripcion>
             </Item>
         </GalleriaIconsSTY>
     );

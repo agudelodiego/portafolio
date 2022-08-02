@@ -22,15 +22,16 @@ const AcercaSTY = styled.main`
 // Componente que contendra el condetido de la pagina o seccion
 const Contenedor = styled.section`
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     align-items: center;
-    padding: 0px 35px 20px 35px;
+    padding: 0px 35px 80px 35px;
     box-sizing: border-box;
     background-image: linear-gradient(to bottom,${props => props.tema.primario},${props => props.tema.secundario});
+    overflow-x: hidden;
 
     /* Algunos estilos para el scroll */
     &::-webkit-scrollbar{

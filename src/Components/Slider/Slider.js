@@ -13,6 +13,12 @@ const Slider = styled.div`
     border-radius: 10px;
     margin: 0 auto;
 
+    @media screen and (max-width: 300px){
+        &{
+            display:none;
+        }   
+    }
+
 
     &::-webkit-scrollbar{
         height: 7px;

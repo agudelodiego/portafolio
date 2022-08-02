@@ -31,11 +31,11 @@ const HomePage = styled.main`
 // Imagen de la home page
 const HackerMan = styled.img`
     height: 90%;
-    width: auto;
+    width: 90%;
 
     @media screen and (min-width: 900px) {
         height: 60%;
-        width: auto;
+        width: 100%;
     }
 `;
 
