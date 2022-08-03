@@ -42,6 +42,12 @@ const Item = styled.div`
             transform: scale(0.7) translateX(0px) translateY(-120px) rotate(-40deg);
         }   
     }
+    @media screen and (min-width: 1000px) {
+        &:hover .hijo{
+            opacity: 1;
+            transform: scale(0.7) translateX(14px) translateY(-150px) rotate(-40deg);
+        }   
+    }
 `;
 
 
@@ -82,10 +88,10 @@ const Descripcion = styled.div`
     transition: opacity 0.5s ease-in, transform 0.8s ease-out;
 
     @media screen and (min-width: 1000px) {
-        width: 260px;
-        height: 260px;
-        top: -120px;
-        left: -75px;
+        width: 300px;
+        height: 300px;
+        top: -140px;
+        left: -97px;
     }
 `;
 const Texto = styled.p`

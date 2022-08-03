@@ -11,6 +11,9 @@ import Home from "./Pages/Home/Home.js";
 // Importamos la pagina acerca
 import Acerca from "./Pages/Acerca/Acerca.js";
 
+// Importamos la pagina contacto
+import Contacto from "./Pages/Contacto/Contacto.js";
+
  
 
 const RouteApp = ()=>{
@@ -21,7 +24,7 @@ const RouteApp = ()=>{
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/acerca" element={<Acerca/>} />
-                    <Route path="/contacto" element={<h1>Contactame</h1>} />
+                    <Route path="/contacto" element={<Contacto />} />
                     <Route path="/proyectos" element={<h1>Proyectos</h1>} />
                     <Route path="/*" element={<h1>Pagina no encontrada</h1>} />
                 </Routes>
