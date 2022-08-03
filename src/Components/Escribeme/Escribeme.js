@@ -5,12 +5,21 @@ import Email from "../../Images/email.png";
 
 
 
+// Importamos los iconos de las redes sociales
+import facebook from "../../Icons/facebookLink.png";
+import instagram from "../../Icons/instagramLink.png";
+import github from "../../Icons/githubLink.png";
+import whatsapp from "../../Icons/whatsappLink.png";
+import EmailEnviado from "../../Images/emailEnviado.png";
+import Cerrar from "../../Icons/borrar.png";
+
+
+
 
 
 // Contenedor para el formulario y la imagen
 const ContenedroForm = styled.section`
     width: 100%;
-    /* max-height: 100vh; */
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -131,6 +140,95 @@ const Mensaje = styled.textarea`
 
 
 
+// Elemento encargado de contener los enlaces a mis redes sociales
+const Redes = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+        top: 200px;
+    }
+`;
+// Elemento encargados de contener cada uno de los enlaces
+const Enlace = styled.a`
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 8px;
+
+`;
+// Elementos encargados de contener los iconos de las redes sociales
+const Icon = styled.img`
+    object-fit: cover;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+
+    @media screen and (min-width: 900px) {
+        width: 45px;
+    }
+`;
+
+
+
+
+// Mensaje de confirmacion de envio de mensaje
+const ConfirmacionCuadro = styled.div`
+    width: 220px;
+    height: 130px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: ${props => props.tema.primario};
+    position: absolute;
+    top: -150px;
+    border: 1.5px solid ${props=> props.tema.terciario};
+    border-radius: 0 0 12px 12px;
+    transform: translateY(0px);
+    transition: transform 0.5s;
+
+    &.enviado{
+        transform: translateY(150px);
+
+        @media screen and (min-width: 900px){
+            transform: translateY(220px);
+        }
+    }
+`;
+// Imagen de confirmacion de envio de mensaje
+const ImgConfirmacion = styled.img`
+    object-fit: cover;
+    width: 40px;
+    height: auto;
+
+    @media screen and (min-width: 900px) {
+        width: 50px;
+    }
+`;
+// Texto de confirmacion de envio de mensaje
+const TextConfirmacion = styled.p`
+    color: ${props => props.tema.terciario};
+    text-align: center;
+`;
+// Icono de cerra
+const CerrarIcon = styled.img`
+    width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+`;
 
 
 
@@ -144,6 +242,7 @@ const Formulario = () =>{
     const[nombre, setNombre] = useState("");
     const[email,setEmail] = useState("");
     const[mensaje,setMensaje] = useState("");
+    const [enviado,setEnviado] = useState(false);
 
 
     // *--------------------------------------------------------------------------
@@ -178,6 +277,7 @@ const Formulario = () =>{
                 // Validamos la respuesta del servidor
                 if(resultado === "true"){
                     console.log("El envio se proceso correctamente");
+                    setEnviado(true);
                 }
 
                 // Reseteamos los estado del formulario
@@ -219,6 +319,27 @@ const Formulario = () =>{
                 <Mensaje name="mensaje" id="mensaje" tema={tema} type="text" value={mensaje} onChange={changeMensaje} required />
                 <Inputs name="enviar" id="enviar" tema={tema} type="submit" value="Enviar" />
             </FormularioSTY>
+            <Redes>
+                <Enlace href="https://www.facebook.com/diegoalexander.agudelogarcia/" target="_blank" >
+                    <Icon src={facebook} alt="Enlace a Facebook" />
+                </Enlace>
+                <Enlace href="https://www.instagram.com/dg.garcia_/" target="_blank" >
+                    <Icon src={instagram} alt="Enlace a Instagram" />
+                </Enlace>
+                <Enlace href="https://github.com/agudelodiego" target="_blank" >
+                    <Icon src={github} alt="Enlace a Github" />
+                </Enlace>
+                <Enlace href="https://chatwith.io/es/s/agudelo-diego" target="_blank" >
+                    <Icon src={whatsapp} alt="Enlace a Whatsapp" />
+                </Enlace>
+            </Redes>
+            <ConfirmacionCuadro tema={tema} className={enviado? "enviado":""} >
+                <ImgConfirmacion src={EmailEnviado} alt="Imagen de confirmacion de envio del mensaje" />
+                <TextConfirmacion tema={tema}>
+                    Mensaje enviado exitosamente
+                </TextConfirmacion>
+                <CerrarIcon src={Cerrar} alt="Icono de cerrar" onClick={()=> setEnviado(false)}/>
+            </ConfirmacionCuadro>
         </ContenedroForm>
     );
 };
