@@ -128,14 +128,14 @@ const aparecer = keyframes`
 const StartBtn = styled.button`
     margin-top: 50px;
     width: 150px;
-    height: 100px;
+    height: 150px;
     background-color: #605399;
     border: none;
-    border-radius: 12px;
+    border-radius: 50%;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-    transition: transform 0.6s, box-shadow 0.6s, border-radius 0.6s;
+    transition: transform 0.6s, box-shadow 0.6s;
     animation: ${aparecer} 2s ease 10s backwards;
 
     &:hover{

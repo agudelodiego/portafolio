@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import React,{useContext,useState} from "react";
+import React,{useContext} from "react";
 import {Tema} from "../TemaColor/ThemeContext";
-import SVG from "react-inlinesvg";
 
 // Importamos los iconos
 import html from "../../Icons/html.png";

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
 import React,{useContext,useState} from "react";
 import {Tema} from "../TemaColor/ThemeContext.js";
 import Email from "../../Images/email.png"; 
@@ -12,6 +12,7 @@ import github from "../../Icons/githubLink.png";
 import whatsapp from "../../Icons/whatsappLink.png";
 import EmailEnviado from "../../Images/emailEnviado.png";
 import Cerrar from "../../Icons/borrar.png";
+import loading from "../../Images/loading.png";
 
 
 
@@ -231,6 +232,31 @@ const CerrarIcon = styled.img`
 `;
 
 
+// Animacion de cargando
+const LoadingAnimation = keyframes`
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+`;
+// Elemento que se encargara de contener la imagen de loading
+const Loading = styled.img`
+    width: 70px;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    visibility: hidden;
+    animation: ${LoadingAnimation} 1s ease infinite;
+    transition: visibility 0.4s;
+    
+    &.load{
+        visibility: visible;
+    }
+`;
+
+
 
 // Funcion encargada de renderizar el formulario
 const Formulario = () =>{
@@ -244,6 +270,9 @@ const Formulario = () =>{
     const[mensaje,setMensaje] = useState("");
     const [enviado,setEnviado] = useState(false);
 
+    // Usamos el hook de useRef para crear una referencia del icono de cargando
+    const [carga, setCarga] = useState("");
+
 
     // *--------------------------------------------------------------------------
     // Manjamos el manejo del formulario
@@ -254,6 +283,10 @@ const Formulario = () =>{
         let asincrona = async() =>{
 
             try{
+
+                // Mostramos la animacion de cargando
+                setCarga("load");
+
                 // Enviamos los datos al servidor
                 let postData = await fetch("https://formsubmit.co/ajax/agudelodiego22@gmail.com", {
                     method: "POST",
@@ -287,6 +320,10 @@ const Formulario = () =>{
             }
             catch (err) {
                 console.error(err);
+            }
+            finally{
+                // Quitamos la animacion de cargando
+                setCarga("");
             }
             
 
@@ -340,6 +377,7 @@ const Formulario = () =>{
                 </TextConfirmacion>
                 <CerrarIcon src={Cerrar} alt="Icono de cerrar" onClick={()=> setEnviado(false)}/>
             </ConfirmacionCuadro>
+            <Loading src={loading} alt="Imagen de cargando" className={carga}/>
         </ContenedroForm>
     );
 };
