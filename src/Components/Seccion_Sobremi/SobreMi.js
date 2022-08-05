@@ -47,7 +47,7 @@ const SobreMi = ()=>{
                 Conocí el mundo de la programacion y el desarrollo de software cuando estaba en segundo semestre debido a que en dicho semestre se dictaba la asignatura de programacion basica, donde aprendí las bases de la programacion con lenguaje C++. Puedo decir que este punto de mi vida fue el punto de inflexion, el punto donde supe a que me queria dedicar el resto de mi vida.
             </Texto>
             <Texto tema={tema}>
-                Comence por tanto un viaje en el mundo de la tecnologia, con hambre de conocimientos y sed experiencia. Me he construido de manera autodidacta y manteniendo siempre en menta una frase que decia un antiguo miembro de la comunidad de programacion ATS "Si puedes imaginarlo puedes programarlo";
+                Comence por tanto un viaje en el mundo de la tecnologia, con hambre de conocimientos y sed experiencia. Me he construido de manera autodidacta y manteniendo siempre en mente una frase que decia un antiguo miembro de la comunidad de programacion ATS "Si puedes imaginarlo puedes programarlo";
             </Texto>
         </SobreMiSTY>
     );

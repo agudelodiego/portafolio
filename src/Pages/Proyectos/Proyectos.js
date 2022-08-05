@@ -50,7 +50,7 @@ const Proyectos = ()=>{
         <ProyectosSTY tema={tema}>
             <Titulo tema={tema}>Proyectos</Titulo>
             <Texto tema={tema}>
-                Soy un desarrollador junior, por lo que aun no cuento con una gran cantidad de proyectos que poder mostrar, ni tampoco son proyectos muy impresionantes, con lo que si cuento es con las ganas de aprender y crecer profesional
+                Soy un desarrollador junior, por lo que aun no cuento con una gran cantidad de proyectos que poder mostrar, ni tampoco son proyectos muy impresionantes, con lo que si cuento es con las ganas de aprender y crecer profesionalmente.
             </Texto>
             <Texto tema={tema}>
                 Puedes ver algunos de los proyectos que he realizado. Al darle click a alguno de los items podras ver una pequeña descripcion del proyecto asi como los respectivos enlaces a los respositorios.
