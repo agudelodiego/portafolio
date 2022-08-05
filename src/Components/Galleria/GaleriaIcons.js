@@ -120,7 +120,7 @@ const GaleriaIcon = ()=>{
                 <ItemH2 tema={tema}>Html</ItemH2>
                 <Descripcion tema={tema} className="hijo">
                     <Texto tema={tema}>
-                        Html es el lenguaje mediante el cual se construye la estructura de una pagina web o aplicativo web.
+                        Html es el lenguaje mediante el cual se construye la estructura de una página web o aplicativo web.
                     </Texto>
                 </Descripcion>
             </Item>
@@ -147,7 +147,7 @@ const GaleriaIcon = ()=>{
                 <ItemH2 tema={tema}>React</ItemH2>
                 <Descripcion tema={tema} className="hijo">
                     <Texto tema={tema}>
-                        React es una libreria de Javascript pensada para hacer programacion reactiva, es decir, reaccionar a las acciones del usuario.
+                        React es una libreria de Javascript pensada para hacer programación reactiva, el cual es unos de varios paradigmas de la programación.
                     </Texto>
                 </Descripcion>
             </Item>
@@ -165,7 +165,7 @@ const GaleriaIcon = ()=>{
                 <ItemH2 tema={tema}>Python</ItemH2>
                 <Descripcion tema={tema} className="hijo">
                     <Texto tema={tema}>
-                        Python es un lenguaje de programacion bastante utilizado hoy en dia, suele ser muy utilizado en la programacion del lado del servidor y en inteligencia artificial.
+                        Python es un lenguaje de programación bastante utilizado hoy en dia, se le suele enfocar en la programación del lado del servidor y en inteligencia artificial.
                     </Texto>
                 </Descripcion>
             </Item>
@@ -174,7 +174,7 @@ const GaleriaIcon = ()=>{
                 <ItemH2 tema={tema}>Styled-components</ItemH2>
                 <Descripcion tema={tema} className="hijo">
                     <Texto tema={tema}>
-                        Styled-components es una libreria que le permite a los programadores diseñar componentes de una manera mas sencilla y poderosa.
+                        Styled-components es una libreria que le permite a los programadores diseñar componentes de una manera mas optima.
                     </Texto>
                 </Descripcion>
             </Item>
