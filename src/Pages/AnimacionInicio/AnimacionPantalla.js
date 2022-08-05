@@ -48,17 +48,17 @@ const ContenidoApp = styled.div`
     }
        
 `;
-const StartBtn = styled.button`
-    width: 120px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 100px;
-    left: 45%;
-    z-index: 200;
-`;
+// const StartBtn = styled.button`
+//     width: 120px;
+//     height: 50px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     top: 100px;
+//     left: 45%;
+//     z-index: 200;
+// `;
 
 
 
