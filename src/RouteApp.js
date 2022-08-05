@@ -29,7 +29,7 @@ const RouteApp = ()=>{
                     <Route path="/acerca" element={<Acerca/>} />
                     <Route path="/contacto" element={<Contacto />} />
                     <Route path="/proyectos" element={<Proyectos />} />
-                    <Route path="/*" element={<h1>Pagina no encontrada</h1>} />
+                    <Route path="/*" element={<Home />} />
                 </Routes>
             </Router>
         </ThemeContext>
