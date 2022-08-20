@@ -96,7 +96,7 @@ const Home = ()=>{
         <HomePage tema={tema}>
             <TextContainer>
                 <Texto tema={tema}>
-                    ¡Hola mundo y bienvenidos!, soy Diego, un desarrollador front-end Colombiano que le apasiona mucho el mundo de tecnología. Y recuerda siempre: "¡Si pudes imaginarlo, pudes programarlo!".
+                    ¡Hola mundo y bienvenidos!. Soy Diego, un desarrollador front-end Colombiano que le apasiona mucho el mundo de la tecnología. Y recuerda siempre: "¡Si pudes imaginarlo, pudes programarlo!".
                 </Texto>
             </TextContainer>
             <ImgContainer>

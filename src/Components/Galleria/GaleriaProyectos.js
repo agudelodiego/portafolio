@@ -10,6 +10,7 @@ import BDDs from "../../Images/bases-de-datos.png";
 import calculadora from "../../Images/calcular.png";
 import registradora from "../../Images/caja-registradora.png";
 import portafolio from "../../Images/portafolio.png";
+import viajes from "../../Images/viajes.png";
 
 
 // Importamos el hook personalizado que se encarga de devolver la informacion de cada item
@@ -124,6 +125,10 @@ const Galeria = ()=>{
             <Item tema={tema} onClick={()=>AbrirResumen(Informacion.portafolio)}>
                 <ItemImg src={portafolio} alt="Imagen de un portafolio web" />
                 <ItemDesc tema={tema}>Portafolio</ItemDesc>
+            </Item>
+            <Item tema={tema} onClick={()=>AbrirResumen(Informacion.travelApp)}>
+                <ItemImg src={viajes} alt="Imagen de un vuelo en avion"/>
+                <ItemDesc tema={tema}>Travel App</ItemDesc>
             </Item>
             <Item tema={tema} onClick={()=>AbrirResumen(Informacion.API)}>
                 <ItemImg src={api} alt="Imagen de una API" />  

@@ -30,7 +30,7 @@ const ResumenSTY = styled.div`
     overflow-x: hidden;
     overflow-y: auto;
     transition: top 0.5s ease-out, visibility 0.5s;
-    padding: 12px;
+    padding: 5vw;
     box-sizing: border-box;
 
     /* Algunos estilos para el scroll */
@@ -50,9 +50,9 @@ const ResumenSTY = styled.div`
     @media screen and (min-width: 700px){
         width: 50vw;
     }
-    @media screen and (min-width: 900px){
+    /* @media screen and (min-width: 900px){
         padding: 90px 12px 12px 12px;
-    }
+    } */
 `;
 
 
@@ -76,7 +76,7 @@ const ContenedorEnlaces = styled.div`
     justify-content: space-evenly;
     align-items: center;
     position: sticky;
-    top: 0px;
+    top: 10px;
 `;
 
 
@@ -89,7 +89,7 @@ const Enlace = styled.a`
     border-radius: 6px;
     cursor: pointer;
     color: ${props => props.tema.terciario};
-    border: 2px solid ${props => props.tema.primario};
+    border: 2px solid ${props => props.tema.terciario};
     transition: box-shadow 0.5s;
 
     &:hover{

@@ -44,10 +44,10 @@ const SobreMi = ()=>{
                 Soy estudiante de Tecnología en Electrónica del ITM, me encuentro cursando último semestre, en espera de grados.
             </Texto>
             <Texto tema={tema}>
-                Conocí el mundo de la programación y el desarrollo de software cuando estaba en segundo semestre debido a que en dicho semestre se dictabá la asignatura de programacion básica, donde aprendí las bases de la programación con lenguaje C++. Puedo decir que este punto de mi vida fue el punto de inflexión, el punto donde supe a que me quería dedicar el resto de mi vida.
+                Conocí el mundo de la programación y el desarrollo de software cuando estaba en segundo semestre, debido a que se dictabá la asignatura de programación básica, donde aprendí las bases de la programación con lenguaje C++. Puedo decir que este punto de mi vida fue el punto de inflexión, el punto donde supe a que me quería dedicar el resto de mi vida.
             </Texto>
             <Texto tema={tema}>
-                Comence por tanto un viaje en el mundo de la tecnologia, con hambre de conocimientos y sed experiencia. Me he construido de manera autodidacta, y manteniendo siempre en mente una frase que decía un antiguo miembro de la comunidad de programación ATS: "Si puedes imaginarlo, puedes programarlo";
+                Comence por tanto un viaje en el mundo de la tecnología, con hambre de conocimientos y sed experiencia. Me he construido de manera autodidacta, y manteniendo siempre en mente una frase que decía un antiguo miembro de la comunidad de programación ATS: "Si puedes imaginarlo, puedes programarlo";
             </Texto>
         </SobreMiSTY>
     );
