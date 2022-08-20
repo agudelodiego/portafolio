@@ -59,7 +59,7 @@ const NavDesktop = ()=>{
 
             <ToggleTheme />
             <Logo />
-            <DeskLink tema={tema} to="/" className={(isActive)=>isActive?"ative":""}>
+            <DeskLink tema={tema} to="/portafolio" className={(isActive)=>isActive?"ative":""}>
                 Home
             </DeskLink>
             <DeskLink tema={tema} to="/acerca" className={(isActive)=>isActive?"ative":""}>

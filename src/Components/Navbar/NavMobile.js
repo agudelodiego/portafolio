@@ -172,7 +172,7 @@ const NavMobile = ()=>{
 
     return(
         <Contenedor primario={tema.primario} secundario={tema.secundario} terciario={tema.terciario}>
-            <Link to="/" className={(isActive)=>isActive?"ative":""}>
+            <Link to="/portafolio" className={(isActive)=>isActive?"ative":""}>
                 <Icon src={IconHome} alt="Icono de inicio" terciario={tema.terciario} />
                 Home
             </Link>

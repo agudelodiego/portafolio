@@ -25,11 +25,10 @@ const RouteApp = ()=>{
             <Router>
                 <Navbar />
                 <Routes>
-                    <Route index path="/" element={<Home />} />
+                    <Route path="/portafolio" element={<Home />} />
                     <Route path="/acerca" element={<Acerca/>} />
                     <Route path="/contacto" element={<Contacto />} />
                     <Route path="/proyectos" element={<Proyectos />} />
-                    {/* <Route path="/*" element={<Home />} /> */}
                 </Routes>
             </Router>
         </ThemeContext>
