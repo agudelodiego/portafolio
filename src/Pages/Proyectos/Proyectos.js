@@ -50,7 +50,7 @@ const Proyectos = ()=>{
         <ProyectosSTY tema={tema}>
             <Titulo tema={tema}>Proyectos</Titulo>
             <Texto tema={tema}>
-                Soy un desarrollador web junior, cuento con muchas de ganas de aprender y desarrollarme como un profesional en este mundo. Me interesa mucho el desarrollo web, tanto en la parte de frontend como en la parte del backend.
+                Tengo cuatro meses de experiencia trabajando para una compañia Colombiana llamada peaku, en donde tuve la oportunidad de desarrollar un web scraper, asi como diversas landing pages y extensiones de google chrome utilizando react js
             </Texto>
             <Texto tema={tema}>
                 A continuación, se muestra una galeria con varios de los proyectos que he realizado, al darle click a alguno de los items se mostrará una breve descripción del proyecto, junto uno o dos botones, los cuales te llevarán a los repositorios de codigo en mi perfil de github o al host donde se encuentra desplegado el proyecto. Ten encuenta que algunos de los proyectos nos tienen un despliegue por lo que solo podras ver el codigo de los mismos.

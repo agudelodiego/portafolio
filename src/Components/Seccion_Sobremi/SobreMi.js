@@ -41,7 +41,7 @@ const SobreMi = ()=>{
                 <Foto src={Foto4} alt="Imagen de slider" />
             </Slider>
             <Texto tema={tema}>
-                Soy estudiante de Tecnología en Electrónica del ITM, me encuentro cursando último semestre, en espera de grados.
+                Estudié tecnología en electrónica en el intituto tecnológico metropolitano ITM, en Medellin. Me gradue en el año 2022, realicé las practicas en la compañia Nacional de Chocolates y estuvé trabajando durando periodo de tiempo en una compañia llamada peaku.
             </Texto>
             <Texto tema={tema}>
                 Conocí el mundo de la programación y el desarrollo de software cuando estaba en segundo semestre, debido a que se dictabá la asignatura de programación básica, donde aprendí las bases de la programación con lenguaje C++. Puedo decir que este punto de mi vida fue el punto de inflexión, el punto donde supe a que me quería dedicar el resto de mi vida.
